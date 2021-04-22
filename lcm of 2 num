@@ -3,7 +3,7 @@ def calculate_LCM(a,b):
         higher=a
     else:
         higher=b
-        value=higher
+    value=higher
     while(True):    
         if (higher % a == 0 and higher % b == 0):
             print("LCM is",higher)
