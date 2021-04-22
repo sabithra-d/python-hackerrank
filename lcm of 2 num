@@ -1,0 +1,16 @@
+def calculate_LCM(a,b):
+    if(a>b):
+        higher=a
+    else:
+        higher=b
+        value=higher
+    while(True):    
+        if (higher % a == 0 and higher % b == 0):
+            print("LCM is",higher)
+        break
+    else:
+            higher=higher+value
+a=int(input("Enter a number1:"))
+b=int(input("Enter a number2:"))
+calculate_LCM(a,b)
+
