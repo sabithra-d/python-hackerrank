@@ -1,0 +1,7 @@
+n1=int(input("Enter the first numerator:"))
+d1=int(input("Enter the first denominator:"))
+n2=int(input("Enter the second numerator:"))
+d2=int(input("Enter the second denominator:"))
+x=(n1*d2)+(n2*d1)
+y=d1*d2
+print(str(x)+"/"+str(y))
