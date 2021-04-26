@@ -1,0 +1,13 @@
+def my_func(string):
+        m=len(string)//2
+        if len(string) % 2 == 0:
+            first=string[m]
+            second=string[m-1]
+            result2=string.replace(first,'*')
+            result1=result2.replace(second,'*')
+            print(result1)
+        elif len(string) % 2 != 0:
+            first=string[m]
+            print(string.replace(first,'*'))
+string=input("Enter a string:")
+my_func(string)
