@@ -1,0 +1,11 @@
+if __name__ == '__main__':
+    n = int(input())
+    arr = list(map(int, input().split()))
+    result=[]
+    for i in arr:
+        if i not in result:
+            result.append(i)
+    a=max(result)
+    result.remove(a)
+    b=max(result)
+    print(b)     
