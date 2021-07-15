@@ -1,0 +1,20 @@
+//ip:5 6 7
+     3 6 10
+//op:1 1     
+
+a=input().split()
+#print(a)
+b=input().split()
+#print(b)
+acount=0
+bcount=0
+for i in range(0,len(a)):
+    result=int(a[i])
+    result1=int(b[i])
+    if(result > result1):
+        acount+=1
+    elif(result < result1):
+        bcount+=1  
+print(acount,bcount)        
+      
+    
