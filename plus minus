@@ -1,0 +1,29 @@
+//ip:6               
+     -4 3 -9 0 4 1
+//op:0.500000
+    0.333333
+    0.166667
+
+n=int(input())
+s=input()
+count=0
+count1=0
+count2=0
+arr=s.split()
+for i in arr:
+    a=int(i)
+    if(a > 0):
+        count+=1
+        r1=count/n
+    elif(a < 0):
+        count1+=1
+        r2=count1/n
+    else:
+        count2+=1
+        r3=count2/n
+print('%.6f'%r1)
+print('%.6f'%r2)
+print('%.6f'%r3)
+        
+    
+
