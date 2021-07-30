@@ -1,0 +1,52 @@
+st=input().split()
+st1=[int(i) for i in st]
+#print(st1)
+ab=input().split()
+ab1=[int(i) for i in ab]
+#print(ab1)
+mn=input()
+m=input().split()
+n=input().split()
+m1=[int(i) for i in m]
+n1=[int(i) for i in n]
+#print(m1)
+#print(n1)
+l=[]
+for i in range(0,len(m1)):
+    res=ab1[0]+m1[i]
+    l.append(res)
+#print(l)
+l1=[]
+for i in range(0,len(n1)):
+    res1=ab1[1]+n1[i]
+    l1.append(res1)
+#print(l1)
+result=[] 
+for i in range(0,len(l)):
+    if(l[i] >= st1[0] and l[i] <= st1[1] ):
+        result.append(l[i])
+#print(result)
+result1=[]
+for i in range(0,len(l1)):
+    if(l1[i] >= st1[0] and l1[i] <= st1[1]):
+        result1.append(l1[i])
+#print(result1)
+count=0      
+for i in result:
+    count+=1    
+print(count)
+count1=0
+for i in result1:
+    count1+=1    
+print(count1)    
+
+
+   
+      
+    
+    
+
+
+   
+
+ 
