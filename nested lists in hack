@@ -1,0 +1,21 @@
+n=int(input())
+l=[]
+for i in range(n):
+    name=input()
+    scores=float(input())
+    l.append([name,scores])
+l=dict(l)
+#print(l)
+s=sorted(set(l.values()))
+#print(s)
+second_highest=s[1]
+#print(second_highest)
+li=[]
+for key, value in l.items():
+    if second_highest == value:
+        li.append(key)
+        li.sort()
+    #print(li)
+    
+for i in li:
+    print(i)
